@@ -1,22 +1,22 @@
 
-# 🚀 Welcome to My JavaScript Playground 🚀
+**🚀 Explore the Wonders of JavaScript 🌈**
 
 ## 🎨 Created some awesome JS projects on DOM Manipulation
 
-### Project 1: BMI Calculator
-✨ [Check out the BMI Calculator](https://github.com/ranjitgithub2001/JavaScript/blob/main/bmi.html)
+### Project 1: FitCheck BMI Calculator
+✨ [Check out the FitCheck BMI Calculator](https://github.com/ranjitgithub2001/JavaScript/blob/main/bmi.html)
 
-### Project 2: Color Scheme Changer
-🌈 [Explore the Color Scheme Changer](https://github.com/ranjitgithub2001/JavaScript/blob/main/colorSchemeChanger.html)
+### Project 2: ColorPalette Magic
+🌈 [Explore the ColorPalette Magic](https://github.com/ranjitgithub2001/JavaScript/blob/main/colorSchemeChanger.html)
 
-### Project 3: Guess The Number Game
-🔢 [Join the Guess The Number Game](https://github.com/ranjitgithub2001/JavaScript/blob/main/guessTheNumber.html)
+### Project 3: NumberGuesser 100
+🔢 [Join the NumberGuesser 100](https://github.com/ranjitgithub2001/JavaScript/blob/main/guessTheNumber.html)
 
-### Project 4: Local Time Displayer
-⌚ [Discover the Local Time Displayer](https://github.com/ranjitgithub2001/JavaScript/blob/main/localTime.html)
+### Project 4: TimeLogger
+⌚ [Discover the TimeLogger](https://github.com/ranjitgithub2001/JavaScript/blob/main/localTime.html)
 
 ### Project 5: Keyboard's & Keycode
 ⌨️ [Explore the KeyCodes](https://github.com/ranjitgithub2001/JavaScript/blob/main/seeKeyboardKey.html)
 
-### Project 6: WebPage Color Change Controller
-🎨 [Check out the WebPage Color Changer Controller](https://github.com/ranjitgithub2001/JavaScript/blob/main/unlimitedColor.html)
+### Project 6: ColorFlow Explorer
+🎨 [Check out the ColorFlow Explorer](https://github.com/ranjitgithub2001/JavaScript/blob/main/unlimitedColor.html)
