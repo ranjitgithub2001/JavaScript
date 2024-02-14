@@ -1,11 +1,22 @@
 
-<h1>This is My JavaScript Work Place</h1>
-<h2>Created some basic and good JS project on DOM Manipulation </h2>
-<h3> Project 1:  BMI Calculator <h4>[https://github.com/ranjitgithub2001/JavaScript/blob/main/bmi.html]</h4></h3>
-<h3> Project 2: </h3>
-<h3> Project 3: </h3>
-<h3> Project 4: </h3>
-<h3> Project 5: </h3>
-<h3> Project 6: </h3>
-<h3> Project 7: </h3>
-<h3> Project 8: </h3>
+# 🚀 Welcome to My JavaScript Playground 🚀
+
+## 🎨 Created some awesome JS projects on DOM Manipulation
+
+### Project 1: BMI Calculator
+✨ [Check out the BMI Calculator](https://github.com/ranjitgithub2001/JavaScript/blob/main/bmi.html)
+
+### Project 2: Color Scheme Changer
+🌈 [Explore the Color Scheme Changer](https://github.com/ranjitgithub2001/JavaScript/blob/main/colorSchemeChanger.html)
+
+### Project 3: Guess The Number Game
+🔢 [Join the Guess The Number Game](https://github.com/ranjitgithub2001/JavaScript/blob/main/guessTheNumber.html)
+
+### Project 4: Local Time Displayer
+⌚ [Discover the Local Time Displayer](https://github.com/ranjitgithub2001/JavaScript/blob/main/localTime.html)
+
+### Project 5: Keyboard's & Keycode
+⌨️ [Explore the KeyCodes](https://github.com/ranjitgithub2001/JavaScript/blob/main/seeKeyboardKey.html)
+
+### Project 6: WebPage Color Change Controller
+🎨 [Check out the WebPage Color Changer Controller](https://github.com/ranjitgithub2001/JavaScript/blob/main/unlimitedColor.html)
