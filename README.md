@@ -1,4 +1,3 @@
-
 **🚀 Explore the Wonders of JavaScript 🌈**
 
 ## 🎨 Created some awesome JS projects on DOM Manipulation
@@ -20,3 +19,6 @@
 
 ### Project 6: ColorFlow Explorer
 🎨 [Check out the ColorFlow Explorer](https://github.com/ranjitgithub2001/JavaScript/blob/main/unlimitedColor.html)
+
+### Project 7: Battleship Game
+🚢 [Play the Battleship Game](https://github.com/ranjitgithub2001/JavaScript/blob/main/Battleship2.html)
