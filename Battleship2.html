@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: aqua; background-color: black;">Battleship Game</h1>
+  <p>Guess a number between 1 and 5:</p>
+  <input type="number" id="userGuess" min="1" max="5">
+  <button onclick="checkGuess()">Submit Guess</button>
+
+  <script>
+    
+    const battleshipPositions = [0, 1, 1, 0, 1];
+
+    let totalGuesses = 0;
+    let hitCount = 0;
+
+    function checkGuess() {
+      const userGuess = parseInt(document.getElementById('userGuess').value);
+
+      if (isNaN(userGuess) || userGuess < 1 || userGuess > 5) {
+        alert('Enter a valid number between 1 and 5.');
+        return;
+      }
+
+      totalGuesses++;
+      if (battleshipPositions[userGuess - 1] === 1) {
+        alert('You have hit the battleship!');
+        hitCount++;
+
+        if (hitCount === 3) {
+          alert(`Congratulations! You sank all the battleships in ${totalGuesses} guesses.`);
+          resetGame();
+        }
+      } else {
+        alert('You missed the battleship.');
+      }
+    }
+
+    function resetGame() {
+      totalGuesses = 0;
+      hitCount = 0;
+      document.getElementById('userGuess').value = '';
+    }
+  </script>
+</body>
+</html>
