@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Child Node</title>
+</head>
+<body style="background-color: black; color: aquamarine;">
+    <input type="text" name="langName" placeholder="Enter Language Name" id="ipLang" style="border-radius: 15px; border-color: chartreuse; border-width: 7px;">
+    <button style="background-color: beige; color: green; border-radius: 15px;" for="langName" onclick="addChildEl()">Add Language</button>
+    <button style="background-color: red; border-radius: 15px;" onclick="removLang()">Delete Language</button>
+    <ul class="main">
+        <!-- <li>JavaScript</li> -->
+    </ul>
+</body>
+<script>
+    function addChildEl() {
+        const li=document.createElement('li')
+        const txt=document.getElementById('ipLang').value
+        li.appendChild(document.createTextNode(txt))
+        document.querySelector('.main').appendChild(li)
+        document.getElementById('ipLang').value = ''
+
+        if(document.querySelector('.main').childElementCount>2){
+            replaceLang()
+        }
+
+       
+    }
+    // function delLang() {
+    //     const arr=document.querySelector('.main')
+    //     const lastElement=arr.lastElementChild
+
+    //    if(lastElement){
+    //         lastElement.remove()
+    //     }else{
+    //         console.error("No elements with class 'main' found");
+    //     }
+    // }
+
+    function removLang() {
+        const lastLang=document.querySelector('li:last-child')
+        lastLang.remove()
+    }
+
+    function replaceLang(){
+        const oldEle=document.querySelector('li:nth-child(2)')
+        const newEle=document.createElement('li')
+        newEle.appendChild(document.createTextNode('Replaced'))
+        oldEle.replaceWith(newEle)
+    }
+
+
+</script>
+    
+</html>

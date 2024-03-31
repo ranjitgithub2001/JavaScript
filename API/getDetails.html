@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API | Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .follower-count {
+            display: flex;
+            align-items: center;
+            color: #555;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .follower-icon {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="card">
+        <button id="get">Get Info</button><br>
+    </div> 
+    
+
+</body>
+<script>
+    const reqURL = 'https://api.github.com/users/ranjitgithub2001';
+    document.querySelector('#get').addEventListener('click', function (e) {
+        e.preventDefault();
+        const hrs = new XMLHttpRequest();
+        hrs.open('GET', reqURL);
+        hrs.send();
+        hrs.onreadystatechange = function () {
+            if (hrs.readyState === 4) {
+                const data = JSON.parse(this.responseText);
+                const imgurl = data.avatar_url;
+                const followers = data.followers;
+                const userName = data.name;
+                
+                document.getElementById('card').innerHTML = `
+                    <img src="${imgurl}" alt="Card Image">
+                    <div class="card-content">
+                        <h2>${userName}</h2>
+                        <div class="follower-count">
+                            <span class="follower-icon">&#128151;</span>
+                            <span>Followers: ${followers}</span>
+                        </div>
+                    </div>
+                `;
+            }
+        };
+    });
+</script>
+</html>

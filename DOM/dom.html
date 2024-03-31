@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+</head>
+<body style="background-color: black; color: aquamarine;">
+    <div class="parent">
+        <!-- This is a comment -->
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wedneday</div>
+    </div>
+</body>
+<script>
+    const parent= document.querySelector('.parent')
+    // console.log(parent)
+    const myArr=Array.from(parent.children)
+    // console.log(myArr);
+    // myArr.forEach((d)=>{
+    //      d.style.backgroundColor='orange';
+    //     // d.style.padding='15px';
+    //     d.style.borderRadius='20px'; 
+    // })
+    const dayOne=document.querySelector('.day')
+
+    console.log(dayOne);
+    console.log(dayOne.nextElementSibling);
+    console.log(parent.childNodes);
+</script>
+</html>
