@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Time</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            margin: 0; /* Remove default margin to ensure full-width background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .clock {
+            background-color:chocolate;
+            border-radius: 15px;
+            border-color:aqua ;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .date {
+            background-color:cadetblue;
+            border-radius: 15px;
+            border-color:aqua ;
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Today's Date</h3>
+        <div class="date"></div>
+        <h3>Your Local Time</h3>
+        <div class="clock"></div>
+    </div>
+</body>
+<script>
+    const clock=document.querySelector('.clock')
+    const date=document.querySelector('.date')
+    setInterval(function(){
+        let time=new Date()
+        clock.innerHTML=time.toLocaleTimeString()
+        date.innerHTML=time.toDateString()
+    },1000)
+</script>
+</html>

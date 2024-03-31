@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+        /* Add some basic styling for the boxes */
+        .box {
+          width: 100px;
+          height: 100px;
+          margin: 10px;
+          display: inline-block;
+          border-width: 3px;
+          border-color: black;
+          border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: black; text-align: center;" >Colour Scheme Switcher</h1>
+        <span class="box" style="background-color: red;" id="red"></span>
+        <span class="box" style="background-color: orange;" id="orange"></span>
+        <span class="box" style="background-color: yellow;" id="yellow"></span>
+        <span class="box" style="background-color: green;" id="green"></span>
+        <span class="box" style="background-color: blue;" id="blue"></span>
+        <span class="box" style="background-color: indigo;" id="indigo"></span>
+        <span class="box" style="background-color: violet;" id="violet"></span>
+        <h1 class="h">Please Select one Colour from it to change the Colour of Web Page</h1>
+    </div>
+</body>
+<script>
+    const body=document.querySelector('body')
+    const button=document.querySelectorAll('.box')
+    button.forEach(function(b){
+     b.addEventListener('click', function(e){
+        switch (e.target.id) {
+            case "red":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "orange":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "yellow":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "green":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "blue":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "indigo":
+                body.style.backgroundColor=e.target.id
+                break;
+            case "violet":
+                body.style.backgroundColor=e.target.id
+                break;
+            default:
+                break;
+        }
+     })
+    })
+</script>
+</html>
